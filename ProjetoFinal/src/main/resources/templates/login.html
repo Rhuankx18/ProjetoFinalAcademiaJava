@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="card">
+    <img class="logo"   src="source/logosfundo.png" alt="logo">
+    <form class="formulario" action="#"
+          th:action="@{/login}"
+          method="POST">
+      <span>Login page</span>
+      <label class='formulario-label' for="email"></label>
+      <input class='formulario-input' type="text" name='email' id='email' required
+             placeholder='Usuário'/>
+
+      <label class='formulario-label' for="password"></label>
+      <input class='formulario-input' type="password" name='password' id='password' required
+             placeholder='Senha'/>
+      <button type="submit" th:href="@{/index.html}">Acessar</button>
+    </form>
+
+
+    <a class="item" href="#">Realizar cadastro</a>
+    <a class="item" href="#">Esqueceu a senha?</a>
+  </div>
+</div>
+</body>
+
+</html>
